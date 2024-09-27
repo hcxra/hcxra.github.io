@@ -260,3 +260,90 @@ h1 {
 .content-box .description {
     font-size: 21px;
 }
+
+/* Mobile Layout*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Media Query for tablets (768px and above) */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Change layout to row on larger screens */
+    }
+
+    .profile-photo {
+        margin-right: 50px; /* Adjust spacing */
+    }
+
+    .description-box {
+        width: 900px; /* Adjust width for larger screens */
+    }
+}
+
+/* Media Query for desktops (1024px and above) */
+@media (min-width: 1024px) {
+    .content {
+        padding: 150px 100px; /* Increase padding for bigger screens */
+    }
+
+    .profile-photo {
+        width: 400px; /* Make the profile photo larger */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .description-box {
+        width: 1200px; /* Adjust width for larger desktops */
+    }
+}
+
+/* Mobile view (max-width 600px) */
+@media (max-width: 600px) {
+    /* Stack the content vertically for small screens */
+    .content {
+        flex-direction: column;
+        align-items: center; /* Center items vertically */
+        padding: 20px;
+    }
+
+    /* Make the profile photo smaller */
+    .profile-photo {
+        width: 200px;
+        height: auto;
+        margin: 0 0 20px 0; /* Adjust spacing */
+    }
+
+    /* Reduce the size of the description box */
+    .description-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Make the heading smaller */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Navigation adjustments for small screens */
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .description-box p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    #contact {
+        padding: 100px; /* Reduce padding for mobile screens */
+    }
+}
