@@ -887,7 +887,7 @@ h1 {
     nav {
         position: static;
         text-align: center;
-        margin-top: 20px;
+        margin-bottom: 40px; /* Add margin below the nav to push content down */
     }
 
     nav a {
@@ -935,7 +935,8 @@ h1 {
 
     /* Experiences section adjustments */
     #experience {
-        padding: 60px 20px; /* Add more padding at the top to push the title down */
+        padding-top: 120px; /* Add more padding at the top to push the title down */
+        padding-bottom: 20px;
         text-align: center;
     }
 
@@ -1012,7 +1013,8 @@ h1 {
 
     /* Experiences section adjustments for very small screens */
     #experience {
-        padding: 40px 15px; /* Reduce padding but keep space between title and nav */
+        padding-top: 100px; /* Add more padding to prevent overlap with the nav */
+        padding-bottom: 15px;
     }
 
     .experience-description {
