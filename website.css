@@ -261,7 +261,8 @@ h1 {
     font-size: 21px;
 }
 
-/* Mobile Layout*/
+/* Mobile */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -269,65 +270,525 @@ body {
     height: 100vh;
 }
 
-/* Media Query for tablets (768px and above) */
-@media (min-width: 768px) {
-    .content {
-        flex-direction: row; /* Change layout to row on larger screens */
-    }
-
-    .profile-photo {
-        margin-right: 50px; /* Adjust spacing */
-    }
-
-    .description-box {
-        width: 900px; /* Adjust width for larger screens */
-    }
+/* Background for Home Page */
+body.home {
+    background-image: url('dmv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Media Query for desktops (1024px and above) */
-@media (min-width: 1024px) {
-    .content {
-        padding: 150px 100px; /* Increase padding for bigger screens */
-    }
-
-    .profile-photo {
-        width: 400px; /* Make the profile photo larger */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .description-box {
-        width: 1200px; /* Adjust width for larger desktops */
-    }
+/* Background for About Page */
+body.experiences {
+    background-image: url("inari.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Mobile view (max-width 600px) */
+/* Background for Contact Page */
+body.contact {
+    background-image: url('tower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Heading container styling */
+.heading-container {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Lower the heading by adding margin-top */
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+/* Style the navigation links */
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgba(252, 252, 252, 0.9);
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content layout: photo and text */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 50px;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 300px;
+    height: 390px;
+    margin-right: 120px;
+    border: 0px solid #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text content next to the photo */
+.text-content {
+    max-width: 600px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.819);
+}
+
+/* Description styling */
+.description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffffdf;
+    background-color: rgba(0, 0, 0, 0.193);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Move the description to the right and add a box */
+.description-box {
+    margin-top: 60px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 2px solid #000;
+    height: 600px;
+    width: 1200px;
+    background-color: rgba(101, 72, 72, 0.491);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.description-box p {
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+}
+
+/* Contact Section Styling */
+#contact {
+    text-align: center;
+    padding: 300px;
+}
+
+.section__text__p1 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 70px;
+    color: rgb(227, 232, 243);
+    margin: 20px 0;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* Contact Info Container Styling */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(78, 76, 76) 0.1rem solid;
+    background-color: rgba(0, 0, 0, 0.176);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3.5rem;
+}
+
+.contact-info-container p {
+    font-size: small;
+}
+
+.contact-info-container p a {
+    text-decoration: none;
+    color: rgb(227, 232, 243);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-info-container p a:hover {
+    text-decoration: underline;
+}
+
+/*Title Layout of Index/Home Page*/
+.text-content {
+    max-width: 500px;
+}
+
+/* Text Styling */
+.section__text__p1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+/* EXPERIENCES */
+#experience {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Content Container Styling */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.content-box {
+    background-color: rgba(67, 65, 65, 0.355);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 2000px;
+    text-align: center;
+}
+
+.content-box h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content-box .description {
+    font-size: 21px;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Background for Home Page */
+body.home {
+    background-image: url('dmv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background for About Page */
+body.experiences {
+    background-image: url("inari.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background for Contact Page */
+body.contact {
+    background-image: url('tower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Heading container styling */
+.heading-container {
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Lower the heading by adding margin-top */
+h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    z-index: 10;
+    font-weight: bold;
+}
+
+/* Style the navigation links */
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgba(252, 252, 252, 0.9);
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content layout: photo and text */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 50px;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 300px;
+    height: 390px;
+    margin-right: 120px;
+    border: 0px solid #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text content next to the photo */
+.text-content {
+    max-width: 600px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.819);
+}
+
+/* Description styling */
+.description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffffdf;
+    background-color: rgba(0, 0, 0, 0.193);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Move the description to the right and add a box */
+.description-box {
+    margin-top: 60px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 2px solid #000;
+    height: 600px;
+    width: 1200px;
+    background-color: rgba(101, 72, 72, 0.491);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.description-box p {
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+}
+
+/* Contact Section Styling */
+#contact {
+    text-align: center;
+    padding: 300px;
+}
+
+.section__text__p1 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 70px;
+    color: rgb(227, 232, 243);
+    margin: 20px 0;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/* Contact Info Container Styling */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(78, 76, 76) 0.1rem solid;
+    background-color: rgba(0, 0, 0, 0.176);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3.5rem;
+}
+
+.contact-info-container p {
+    font-size: small;
+}
+
+.contact-info-container p a {
+    text-decoration: none;
+    color: rgb(227, 232, 243);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-info-container p a:hover {
+    text-decoration: underline;
+}
+
+/*Title Layout of Index/Home Page*/
+.text-content {
+    max-width: 500px;
+}
+
+/* Text Styling */
+.section__text__p1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+/* EXPERIENCES */
+#experience {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Content Container Styling */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.content-box {
+    background-color: rgba(67, 65, 65, 0.355);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 2000px;
+    text-align: center;
+}
+
+.content-box h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content-box .description {
+    font-size: 21px;
+}
+
+/* --- Mobile View (max-width 600px) --- */
 @media (max-width: 600px) {
-    /* Stack the content vertically for small screens */
+    /* Keep the content in a row (side-by-side) */
     .content {
-        flex-direction: column;
-        align-items: center; /* Center items vertically */
+        flex-direction: row; /* Ensure content stays in a row */
+        justify-content: center; /* Center the items */
+        align-items: flex-start; /* Align items at the top to lower text */
         padding: 20px;
     }
 
-    /* Make the profile photo smaller */
+    /* Adjust profile photo size */
     .profile-photo {
-        width: 200px;
+        width: 200px; /* Slightly larger than before */
         height: auto;
-        margin: 0 0 20px 0; /* Adjust spacing */
+        margin-right: 20px; /* Keep space between the image and text */
+        margin-bottom: 0; /* Remove bottom margin */
     }
 
-    /* Reduce the size of the description box */
-    .description-box {
-        width: 100%;
-        padding: 10px;
+    /* Keep the text content next to the image */
+    .text-content {
+        max-width: 100%;
+        text-align: left; /* Ensure text aligns to the left */
+        margin-top: 20px; /* Add margin to lower the "Hi, I'm" text */
     }
 
-    /* Make the heading smaller */
+    /* Adjust the text for better readability on smaller screens */
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
-    /* Navigation adjustments for small screens */
+    .description {
+        font-size: 16px;
+        margin-top: 10px; /* Add a little space above the description */
+    }
+
+  /* Adjust description box for readability */
+.description-box {
+    width: 85%; /* Make the box skinnier so it doesn’t take up the full screen */
+    max-width: 450px; /* Set a max width to avoid stretching */
+    margin: 20px auto; /* Center the box horizontally and add space at the top */
+    padding: 10px; /* Added a little padding for readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    border-radius: 10px; /* Add some rounding to the edges */
+}
+
     nav {
         position: static;
         text-align: center;
@@ -339,11 +800,190 @@ body {
         margin-left: 10px;
     }
 
-    .description-box p {
-        font-size: 14px; /* Smaller text for mobile */
+    /* Reduce padding in contact section */
+    #contact {
+        padding: 50px 10px;
     }
 
+    .title {
+        font-size: 30px;
+    }
+
+    .section__text__p1 {
+        font-size: 14px;
+    }
+
+    /* Contact section adjustments for mobile */
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack links vertically */
+        width: 90%; /* Reduce container width */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: none; /* Simplify design */
+    }
+
+    .contact-info-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    .contact-info-container p {
+        font-size: 14px; /* Make text smaller for readability */
+        text-align: center;
+    }
+
+    .icon {
+        width: 45px; /* Adjust size of icons */
+        height: 45px;
+    }
+}
+
+/* --- Mobile View (max-width 600px) --- */
+@media (max-width: 600px) {
+    /* Keep the content in a row (side-by-side) */
+    .content {
+        flex-direction: row; /* Ensure content stays in a row */
+        justify-content: center; /* Center the items */
+        align-items: flex-start; /* Align items at the top to lower text */
+        padding: 20px;
+    }
+
+    /* Adjust profile photo size */
+    .profile-photo {
+        width: 200px; /* Slightly larger than before */
+        height: auto;
+        margin-right: 20px; /* Keep space between the image and text */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    /* Keep the text content next to the image */
+    .text-content {
+        max-width: 100%;
+        text-align: left; /* Ensure text aligns to the left */
+        margin-top: 20px; /* Add margin to lower the "Hi, I'm" text */
+    }
+
+    /* Adjust the text for better readability on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-top: 10px; /* Add a little space above the description */
+    }
+
+  /* Adjust description box for readability */
+  .description-box {
+      width: 85%; /* Make the box skinnier so it doesn’t take up the full screen */
+      max-width: 450px; /* Set a max width to avoid stretching */
+      margin: 20px auto; /* Center the box horizontally and add space at the top */
+      padding: 10px; /* Added a little padding for readability */
+      background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+      border-radius: 10px; /* Add some rounding to the edges */
+  }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    /* Reduce padding in contact section */
     #contact {
-        padding: 100px; /* Reduce padding for mobile screens */
+        padding: 50px 10px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .section__text__p1 {
+        font-size: 14px;
+    }
+
+    /* Contact section adjustments for mobile */
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack links vertically */
+        width: 90%; /* Reduce container width */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: none; /* Simplify design */
+    }
+
+    .contact-info-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    .contact-info-container p {
+        font-size: 14px; /* Make text smaller for readability */
+        text-align: center;
+    }
+
+    .icon {
+        width: 45px; /* Adjust size of icons */
+        height: 45px;
+    }
+}
+
+/* --- Smaller Phones (max-width 400px) --- */
+@media (max-width: 400px) {
+    /* Further reduce profile photo size */
+    .profile-photo {
+        width: 150px; /* Smaller profile photo */
+        margin-right: 15px; /* Reduce the margin between photo and text */
+    }
+
+    /* Keep the text content next to the image */
+    .text-content {
+        margin-top: 15px; /* Lower the text content slightly */
+    }
+
+    /* Adjust the text for very small screens */
+    h1 {
+        font-size: 22px; /* Slightly smaller heading */
+    }
+
+    .description {
+        font-size: 14px; /* Smaller font size for readability */
+    }
+
+    /* Make the description box skinnier */
+    .description-box {
+        width: 90%; /* Slightly wider for smaller screens */
+        max-width: 350px; /* Set a smaller max width */
+        margin: 20px auto; /* Center the box */
+        padding: 8px; /* Reduce padding */
+    }
+
+    nav a {
+        font-size: 14px; /* Slightly smaller navigation text */
+        margin-left: 5px;
+    }
+
+    /* Reduce padding in contact section */
+    #contact {
+        padding: 40px 5px; /* Smaller padding for small screens */
+    }
+
+    .title {
+        font-size: 26px; /* Slightly smaller title */
+    }
+
+    .section__text__p1 {
+        font-size: 12px; /* Smaller font for readability */
+    }
+
+    .icon {
+        width: 35px; /* Make icons smaller */
+        height: 35px;
     }
 }
