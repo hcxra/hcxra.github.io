@@ -857,14 +857,14 @@ h1 {
     }
 
     .experience-description {
-        font-size: 14px; /* Adjust font size for readability on mobile */
+        font-size: 13px; /* Adjust font size for readability on mobile */
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent */
         border-radius: 10px;
     }
 
     .experience-image {
-        width: 100%; /* Make experience images responsive */
+        width: 120%; /* Make experience images responsive */
         max-width: 400px;
         margin: 0 auto 10px auto; /* Center images and add margin */
     }
@@ -934,11 +934,12 @@ h1 {
     }
 
     .experience-description {
-        font-size: 12px; /* Smaller font size */
+        font-size: 11px; /* Smaller font size */
         padding: 8px; /* Less padding on smaller screens */
     }
 
     .experience-image {
         max-width: 300px; /* Reduce max width of images */
+        width: 120%;
     }
 }
