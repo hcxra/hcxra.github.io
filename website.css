@@ -754,6 +754,12 @@ h1 {
         padding: 20px;
     }
 
+    /* Adjust title size */
+    .content-box h1 {
+        font-size: 24px; /* Adjust the font size to fit smaller screens */
+        margin-bottom: 20px;
+    }
+
     /* Adjust profile photo size */
     .profile-photo {
         width: 200px; /* Slightly larger than before */
@@ -771,7 +777,7 @@ h1 {
 
     /* Adjust the text for better readability on smaller screens */
     h1 {
-        font-size: 24px;
+        font-size: 40px;
     }
 
     .description {
@@ -840,9 +846,10 @@ h1 {
 
     /* Experiences section adjustments */
     #experience {
-        padding-top: 120px; /* Add more padding at the top to push the title down */
-        padding-bottom: 20px;
+        padding-top: 150px; /* Increase padding to move the title down */
+        padding-bottom: 0; /* Remove extra bottom padding */
         text-align: center;
+        min-height: 100vh; /* Ensure it fills the entire height of the screen */
     }
 
     .experience-item {
@@ -874,6 +881,10 @@ h1 {
     /* Keep the text content next to the image */
     .text-content {
         margin-top: 15px; /* Lower the text content slightly */
+    }
+
+    .content-box h1 {
+        font-size: 30px; /* Smaller title for very small screens */
     }
 
     /* Adjust the text for very small screens */
@@ -918,8 +929,8 @@ h1 {
 
     /* Experiences section adjustments for very small screens */
     #experience {
-        padding-top: 100px; /* Add more padding to prevent overlap with the nav */
-        padding-bottom: 20px;
+        padding-top: 130px; /* Ensure enough space between the title and nav */
+        padding-bottom: 0; /* Remove extra bottom padding */
     }
 
     .experience-description {
