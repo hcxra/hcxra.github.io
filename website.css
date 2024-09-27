@@ -935,7 +935,7 @@ h1 {
 
     /* Experiences section adjustments */
     #experience {
-        padding: 20px; /* Adjust padding for mobile */
+        padding: 60px 20px; /* Add more padding at the top to push the title down */
         text-align: center;
     }
 
@@ -1012,7 +1012,7 @@ h1 {
 
     /* Experiences section adjustments for very small screens */
     #experience {
-        padding: 15px; /* Reduce padding for small screens */
+        padding: 40px 15px; /* Reduce padding but keep space between title and nav */
     }
 
     .experience-description {
