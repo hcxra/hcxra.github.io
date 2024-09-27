@@ -932,6 +932,29 @@ h1 {
         width: 45px; /* Adjust size of icons */
         height: 45px;
     }
+
+    /* Experiences section adjustments */
+    #experience {
+        padding: 20px; /* Adjust padding for mobile */
+        text-align: center;
+    }
+
+    .experience-item {
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    .experience-description {
+        font-size: 14px; /* Adjust font size for readability on mobile */
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent */
+        border-radius: 10px;
+    }
+
+    .experience-image {
+        width: 100%; /* Make experience images responsive */
+        max-width: 400px;
+        margin: 0 auto 10px auto; /* Center images and add margin */
+    }
 }
 
 /* --- Smaller Phones (max-width 400px) --- */
@@ -985,5 +1008,19 @@ h1 {
     .icon {
         width: 35px; /* Make icons smaller */
         height: 35px;
+    }
+
+    /* Experiences section adjustments for very small screens */
+    #experience {
+        padding: 15px; /* Reduce padding for small screens */
+    }
+
+    .experience-description {
+        font-size: 12px; /* Smaller font size */
+        padding: 8px; /* Less padding on smaller screens */
+    }
+
+    .experience-image {
+        max-width: 300px; /* Reduce max width of images */
     }
 }
